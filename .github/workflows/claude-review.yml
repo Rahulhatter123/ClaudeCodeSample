@@ -3,9 +3,9 @@
 name: Claude Code Review on master pushes
 
 on:
-  # push:
-  #   branches:
-  #     - master
+  push:
+    branches:
+      - master
   pull_request:
     types: [opened, synchronize, reopened]
 
@@ -37,12 +37,22 @@ jobs:
         #     --token "$CLAUDE_PAT" \
         #     --min-score 80 \
         #     --output report.md
+        if: github.event_name == 'pull_request'
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_PAT }}
           github_token: ${{ secrets.GIT_TOKEN }}
           prompt: |
             Review the latest pushed changes for bugs, security issues, and code quality.
+
+      - name: Run Claude Code (Master Audit)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          # Use the CLI directly for a general scan of the repository state
+          claude-code scan --output report.md 
+        env:
+          CLAUDE_PAT: ${{ secrets.CLAUDE_PAT }}
 
       - name: Post review comment on commit
         if: always()
