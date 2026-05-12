@@ -4,7 +4,7 @@ name: Claude Code Review on master pushes
 
 on:
   push:
-    branches:
+    branches-ignore:
       - master
   pull_request:
     types: [opened, synchronize, reopened]
