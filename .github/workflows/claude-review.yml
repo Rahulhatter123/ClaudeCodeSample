@@ -48,7 +48,8 @@ jobs:
       - name: Run Claude Code (Master Audit)
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: |
-          npx @anthropic-ai/claude-code scan --output report.md 
+          # Use standard redirection to save the output to report.md
+          npx @anthropic-ai/claude-code scan > report.md
         env:
           CLAUDE_PAT: ${{ secrets.CLAUDE_PAT }}
 
