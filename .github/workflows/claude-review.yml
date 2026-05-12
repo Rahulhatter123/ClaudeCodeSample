@@ -22,7 +22,7 @@ jobs:
 
       - name: Install Claude Code CLI
         run: |
-          npm install -g @anthropic/claude-code
+          npm install -g @anthropic-ai/claude-code
 
       - name: Run Claude Code review
         env:
