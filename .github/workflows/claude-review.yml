@@ -28,12 +28,11 @@ jobs:
         env:
           CLAUDE_PAT: ${{ secrets.CLAUDE_PAT }}
         run: |
-          claude-code review \
-            --repo "${{ github.repository }}" \
-            --sha "${{ github.sha }}" \
-            --token "$CLAUDE_PAT" \
-            --min-score 80 \
-            --output report.md
+          claude -p "$(cat <<'EOF'
+          Review this PR diff and provide feedback on bugs, security issues, and code quality:
+          $(cat pr_diff.txt)
+          EOF
+          )" > report.md
 
       - name: Post review comment on commit
         if: always()
