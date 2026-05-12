@@ -28,16 +28,17 @@ jobs:
         env:
           CLAUDE_PAT: ${{ secrets.CLAUDE_PAT }}
         run: |
-          claude -p "$(cat <<'EOF'
-          Review this PR diff and provide feedback on bugs, security issues, and code quality:
-          $(cat pr_diff.txt)
-          EOF
-          )" > report.md
+          claude-code review \
+            --repo "${{ github.repository }}" \
+            --sha "${{ github.sha }}" \
+            --token "$CLAUDE_PAT" \
+            --min-score 80 \
+            --output report.md
 
       - name: Post review comment on commit
         if: always()
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
         run: |
           if [ -s report.md ]; then
             gh api \
