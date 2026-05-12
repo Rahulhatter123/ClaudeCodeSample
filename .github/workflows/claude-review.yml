@@ -40,7 +40,7 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_PAT }}
-          git_token: ${{ secrets.GIT_TOKEN }}
+          github_token: ${{ secrets.GIT_TOKEN }}
           prompt: |
             Review the latest pushed changes for bugs, security issues, and code quality.
 
