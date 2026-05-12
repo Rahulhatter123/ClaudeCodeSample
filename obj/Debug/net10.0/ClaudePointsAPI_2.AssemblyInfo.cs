@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClaudePointsAPI_2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71732b0cee78fd71d524300ed7a0afa2a422d8ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e94f8edb4e6d330aa3b9a0277cced2f171ff26d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClaudePointsAPI_2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClaudePointsAPI_2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
