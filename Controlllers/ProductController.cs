@@ -18,4 +18,17 @@ public class ProductsController : ControllerBase
 
         return Ok(products);
     }
+    
+    [HttpGet("test")]
+    public IActionResult GetTestProducts()
+    {
+        var products = new List<string>
+        {
+            "Product 1",
+            "Product 2",
+            "Product 3"
+        };
+
+        return Ok(products);
+    }
 }
