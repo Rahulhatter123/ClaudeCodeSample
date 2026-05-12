@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "mcp__github__get_me",
-      "mcp__github__search_repositories"
+      "mcp__github__search_repositories",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "mcp__plugin_playwright_playwright__browser_handle_dialog",
+      "mcp__plugin_playwright_playwright__browser_snapshot"
     ]
   }
 }

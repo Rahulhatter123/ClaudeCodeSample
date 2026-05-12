@@ -1,0 +1,364 @@
+- generic [ref=e2]:
+  - textbox "hiddenKeyboardKeeper" [ref=e3]
+  - text:   
+  - banner [ref=e4]:
+    - navigation "Primary Navigation" [ref=e5]:
+      - generic [ref=e7]:
+        - link "Logo" [ref=e8] [cursor=pointer]:
+          - /url: https://lapinozpizza.in/
+          - img "Logo" [ref=e9]
+        - list [ref=e11]:
+          - listitem [ref=e12]:
+            - link "Home" [ref=e13] [cursor=pointer]:
+              - /url: https://lapinozpizza.in/
+              - text: Home 
+          - listitem [ref=e14]:
+            - link "Store Locator" [ref=e15] [cursor=pointer]:
+              - /url: https://lapinozpizza.in/store-locator
+              - text: Store Locator 
+          - listitem [ref=e16]:
+            - link "Franchise Enquiry" [ref=e17] [cursor=pointer]:
+              - /url: https://lapinozpizza.in/franchise-enquiry
+              - text: Franchise Enquiry 
+          - listitem [ref=e18]:
+            - link "Our Story" [ref=e19] [cursor=pointer]:
+              - /url: https://lapinozpizza.in/our-story
+              - text: Our Story 
+          - listitem [ref=e20]:
+            - link "Jobs & Careers" [ref=e21] [cursor=pointer]:
+              - /url: https://lapinozpizza.in/jobs-and-careers
+              - text: Jobs & Careers 
+          - listitem [ref=e22]:
+            - link "Contact Us" [ref=e23] [cursor=pointer]:
+              - /url: https://lapinozpizza.in/contact-us
+              - text: Contact Us 
+        - list [ref=e24]:
+          - listitem [ref=e25]:
+            - generic [ref=e26] [cursor=pointer]:
+              - img [ref=e27]
+              - generic [ref=e30]: Login
+    - generic [ref=e31]:
+      - generic [ref=e33]: 
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - link "Profile" [ref=e36] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e37]:
+              - img "Profile" [ref=e40]
+              - paragraph
+          - link "Icon Feather UserPersonal Information" [ref=e41] [cursor=pointer]:
+            - /url: /profile
+            - generic [ref=e42]:
+              - img "Icon Feather User" [ref=e43]
+              - text: Personal Information
+          - link "My orders icMy Orders" [ref=e44] [cursor=pointer]:
+            - /url: /past-order
+            - generic [ref=e45]:
+              - img "My orders ic" [ref=e46]
+              - text: My Orders
+          - link "My wallet icLP Coins" [ref=e47] [cursor=pointer]:
+            - /url: /wallet
+            - generic [ref=e48]:
+              - img "My wallet ic" [ref=e49]
+              - text: LP Coins
+          - link "Manage address icManage Addresses" [ref=e50] [cursor=pointer]:
+            - /url: /manage-address
+            - generic [ref=e51]:
+              - img "Manage address ic" [ref=e52]
+              - text: Manage Addresses
+          - link "faq icFAQs" [ref=e53] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e54]:
+              - img "faq ic" [ref=e55]
+              - text: FAQs
+          - link "track refund icHow to track my Refund?" [ref=e56] [cursor=pointer]:
+            - /url: /refund-policy
+            - generic [ref=e57]:
+              - img "track refund ic" [ref=e58]
+              - text: How to track my Refund?
+          - link " Logout" [ref=e62] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e63]: 
+            - text: Logout
+        - generic [ref=e66]:
+          - generic [ref=e67]: Powered By
+          - link "Uengage Logo Green" [ref=e68] [cursor=pointer]:
+            - /url: https://www.uengage.in/
+            - img "Uengage Logo Green" [ref=e70]
+  - generic [ref=e71]:
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - paragraph [ref=e77]:
+          - link "Home" [ref=e78] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/
+          - text: ">"
+          - link "BOGO" [ref=e79] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376
+          - text: ">"
+          - link "Buy 1 Get 2nd Free (Medium)" [ref=e80] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579
+        - generic [ref=e81]:
+          - img "Buy 1 Get 2nd Free (Medium)" [ref=e86]
+          - generic [ref=e87]:
+            - generic [ref=e88]:
+              - heading "Buy 1 Get 2nd Free (Medium)" [level=1] [ref=e92]
+              - paragraph [ref=e93]: Buy 1 Get 2nd Free (Medium)
+              - paragraph [ref=e95]:
+                - generic [ref=e96]:
+                  - generic [ref=e97]: 
+                  - text: "595"
+              - generic [ref=e98]:
+                - button "Out of stock" [disabled] [ref=e99]
+                - text:    
+            - generic [ref=e100]:
+              - heading "Offers (9)" [level=4] [ref=e101]
+              - list [ref=e102]:
+                - listitem [ref=e103]:
+                  - generic [ref=e105] [cursor=pointer]:
+                    - generic [ref=e106]:
+                      - img [ref=e108]
+                      - generic [ref=e118]:
+                        - paragraph [ref=e119]: Get your 2nd pizza at 50% Off
+                        - text: use code LP50FR2
+                    - img [ref=e121]
+                - listitem [ref=e125]:
+                  - generic [ref=e127] [cursor=pointer]:
+                    - generic [ref=e128]:
+                      - img [ref=e130]
+                      - generic [ref=e140]:
+                        - paragraph [ref=e141]: Get Flat Discount of Rs.200 on Minimum Billing of Rs.999.
+                        - text: use code LPN200
+                    - img [ref=e143]
+                - listitem [ref=e147]:
+                  - generic [ref=e149] [cursor=pointer]:
+                    - generic [ref=e150]:
+                      - img [ref=e152]
+                      - generic [ref=e162]:
+                        - paragraph [ref=e163]: Buy 2 Items and Get 1 Free!!!
+                        - text: use code B2G1 FREE
+                    - img [ref=e165]
+                - listitem [ref=e169]:
+                  - generic [ref=e171] [cursor=pointer]:
+                    - generic [ref=e172]:
+                      - img [ref=e174]
+                      - generic [ref=e184]:
+                        - paragraph [ref=e185]: Get Flat Discount of Rs.100 on Minimum Billing of Rs.599.
+                        - text: use code LPN100
+                    - img [ref=e187]
+                - listitem [ref=e191]:
+                  - generic [ref=e193] [cursor=pointer]:
+                    - generic [ref=e194]:
+                      - img [ref=e196]
+                      - generic [ref=e206]:
+                        - paragraph [ref=e207]: Get Flat Discount of Rs.75 on Minimum Billing of Rs.399
+                        - text: use code LPN75
+                    - img [ref=e209]
+                - listitem [ref=e213]:
+                  - generic [ref=e215] [cursor=pointer]:
+                    - generic [ref=e216]:
+                      - img [ref=e218]
+                      - generic [ref=e228]:
+                        - paragraph [ref=e229]: Get Flat Discount of Rs.50 on Minimum Billing of Rs.299
+                        - text: use code LPN50
+                    - img [ref=e231]
+                - listitem [ref=e235]:
+                  - generic [ref=e237] [cursor=pointer]:
+                    - generic [ref=e238]:
+                      - img [ref=e240]
+                      - generic [ref=e250]:
+                        - paragraph [ref=e251]: Get paneer Tikka Stuffed Garlic Bread free on Min order value of Rs. 699
+                        - text: use code FREESGB
+                    - img [ref=e253]
+                - listitem [ref=e257]:
+                  - generic [ref=e259] [cursor=pointer]:
+                    - generic [ref=e260]:
+                      - img [ref=e262]
+                      - generic [ref=e272]:
+                        - paragraph [ref=e273]: 50% off upto Rs 75/- on orders above Rs.200 for new customers
+                        - text: use code LPNEW50
+                    - img [ref=e275]
+                - listitem [ref=e279]:
+                  - generic [ref=e281] [cursor=pointer]:
+                    - generic [ref=e282]:
+                      - img [ref=e284]
+                      - generic [ref=e294]:
+                        - paragraph [ref=e295]: 50% Off on orders above Rs.200, Max.discount Rs.250
+                        - text: use code LPFLAT50
+                    - img [ref=e297]
+      - text: 
+    - generic [ref=e303]:
+      - heading "Explore" [level=3] [ref=e305]
+      - list [ref=e306]:
+        - listitem [ref=e307]:
+          - link "Veg Pizza New Veg Pizza" [ref=e308] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92354
+            - img "Veg Pizza New" [ref=e310]
+            - heading "Veg Pizza" [level=4] [ref=e311]
+        - listitem [ref=e312]:
+          - link "Sides New Sides" [ref=e313] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92355
+            - img "Sides New" [ref=e315]
+            - heading "Sides" [level=4] [ref=e316]
+        - listitem [ref=e317]:
+          - link "Classic Pizzas For Classic Maniacs New Classic Pizzas For Classic Maniacs" [ref=e318] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/118939
+            - img "Classic Pizzas For Classic Maniacs New" [ref=e320]
+            - heading "Classic Pizzas For Classic Maniacs" [level=4] [ref=e321]
+        - listitem [ref=e322]:
+          - link "Personal Pizza Slice New Personal Pizza Slice" [ref=e323] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/1501161
+            - img "Personal Pizza Slice New" [ref=e325]
+            - heading "Personal Pizza Slice" [level=4] [ref=e326]
+        - listitem [ref=e327]:
+          - link "Festive Dhamaka Combos New Festive Dhamaka Combos" [ref=e328] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/1501162
+            - img "Festive Dhamaka Combos New" [ref=e330]
+            - heading "Festive Dhamaka Combos" [level=4] [ref=e331]
+        - listitem [ref=e332]:
+          - link "Lunch Feast New Lunch Feast" [ref=e333] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/1836141
+            - img "Lunch Feast New" [ref=e335]
+            - heading "Lunch Feast" [level=4] [ref=e336]
+        - listitem [ref=e337]:
+          - link "Beverages New Beverages" [ref=e338] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/1929235
+            - img "Beverages New" [ref=e340]
+            - heading "Beverages" [level=4] [ref=e341]
+        - listitem [ref=e342]:
+          - link "Menu @ 89 New Menu @ 89" [ref=e343] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/2048628
+            - img "Menu @ 89 New" [ref=e345]
+            - heading "Menu @ 89" [level=4] [ref=e346]
+        - listitem [ref=e347]:
+          - link "Regular Pizza @ 169 New Regular Pizza @ 169" [ref=e348] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/2048629
+            - img "Regular Pizza @ 169 New" [ref=e350]
+            - heading "Regular Pizza @ 169" [level=4] [ref=e351]
+        - listitem [ref=e352]:
+          - link "Super Cheesy Double Burst Pizza New Super Cheesy Double Burst Pizza" [ref=e353] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/2048632
+            - img "Super Cheesy Double Burst Pizza New" [ref=e355]
+            - heading "Super Cheesy Double Burst Pizza" [level=4] [ref=e356]
+        - listitem [ref=e357]:
+          - link "International Menu New International Menu" [ref=e358] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/2374780
+            - img "International Menu New" [ref=e360]
+            - heading "International Menu" [level=4] [ref=e361]
+        - listitem [ref=e362]:
+          - link "Season’s Specials ( 4 In 1 ) New Season’s Specials ( 4 In 1 )" [ref=e363] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/2413194
+            - img "Season’s Specials ( 4 In 1 ) New" [ref=e365]
+            - heading "Season’s Specials ( 4 In 1 )" [level=4] [ref=e366]
+        - listitem [ref=e367]:
+          - link "Signature Flavours New Signature Flavours" [ref=e368] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/2486913
+            - img "Signature Flavours New" [ref=e370]
+            - heading "Signature Flavours" [level=4] [ref=e371]
+        - listitem [ref=e372]:
+          - link "Super Saver Trio New Super Saver Trio" [ref=e373] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/2490099
+            - img "Super Saver Trio New" [ref=e375]
+            - heading "Super Saver Trio" [level=4] [ref=e376]
+        - listitem [ref=e377]:
+          - link "Combo New Combo" [ref=e378] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/2490100
+            - img "Combo New" [ref=e380]
+            - heading "Combo" [level=4] [ref=e381]
+        - listitem [ref=e382]:
+          - link "Dessert New Dessert" [ref=e383] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/2490101
+            - img "Dessert New" [ref=e385]
+            - heading "Dessert" [level=4] [ref=e386]
+        - listitem [ref=e387]:
+          - link "Super Saver Deals New Super Saver Deals" [ref=e388] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/2528038
+            - img "Super Saver Deals New" [ref=e390]
+            - heading "Super Saver Deals" [level=4] [ref=e391]
+        - listitem [ref=e392]:
+          - link "Extras New Extras" [ref=e393] [cursor=pointer]:
+            - /url: https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/2560843
+            - img "Extras New" [ref=e395]
+            - heading "Extras" [level=4] [ref=e396]
+      - generic [ref=e397]: Fssai Licence No. 10721026001066
+  - text:        
+  - contentinfo [ref=e398]:
+    - generic [ref=e401]:
+      - generic [ref=e402]:
+        - heading "Useful Links" [level=6] [ref=e403]
+        - list [ref=e404]:
+          - listitem [ref=e405]:
+            - link "Shipping Policy" [ref=e406] [cursor=pointer]:
+              - /url: https://lapinozpizza.in/shipping-policy
+          - listitem [ref=e407]:
+            - link "Order Online" [ref=e408] [cursor=pointer]:
+              - /url: https://lapinozpizza.in/online-order
+          - listitem [ref=e409]:
+            - link "Terms & Conditions" [ref=e410] [cursor=pointer]:
+              - /url: https://lapinozpizza.in/terms-and-conditions
+          - listitem [ref=e411]:
+            - link "Refund Policy" [ref=e412] [cursor=pointer]:
+              - /url: https://lapinozpizza.in/refund-policy
+          - listitem [ref=e413]:
+            - link "Privacy Policy" [ref=e414] [cursor=pointer]:
+              - /url: https://lapinozpizza.in/privacy-policy
+          - listitem [ref=e415]:
+            - link "Promo Codes" [ref=e416] [cursor=pointer]:
+              - /url: https://lapinozpizza.in/promo-codes
+      - generic [ref=e417]:
+        - heading "Payment Methods" [level=6] [ref=e418]
+        - list [ref=e419]:
+          - listitem [ref=e420]:
+            - img "cash icon" [ref=e421]
+            - img "Master Card" [ref=e422]
+            - img "Google Pay" [ref=e423]
+            - img "Paytm" [ref=e424]
+            - img "Visa" [ref=e425]
+            - img "UPI" [ref=e426]
+      - generic [ref=e427]:
+        - heading "Address" [level=6] [ref=e428]
+        - generic [ref=e429]:
+          - img [ref=e431]
+          - paragraph [ref=e434]: Copenhagen Hospitality and RETAILS Godown Area, Zirakpur, Bhabat, Punjab 140604
+      - generic [ref=e435]:
+        - heading "Contact & Connect" [level=6] [ref=e436]
+        - list [ref=e437]:
+          - listitem [ref=e438]:
+            - text: "Customer Support:"
+            - link "support@lapinozpizza.in" [ref=e439] [cursor=pointer]:
+              - /url: mailto:support@lapinozpizza.in
+              - img [ref=e440]
+              - text: support@lapinozpizza.in
+          - listitem [ref=e444]:
+            - text: "Franchise Enquiry:"
+            - link "info@lapinozpizza.in" [ref=e445] [cursor=pointer]:
+              - /url: mailto:info@lapinozpizza.in
+              - img [ref=e446]
+              - text: info@lapinozpizza.in
+          - listitem [ref=e450]:
+            - link "8238235444" [ref=e451] [cursor=pointer]:
+              - /url: tel:8238235444
+              - img [ref=e452]
+              - text: "8238235444"
+        - paragraph [ref=e456]:
+          - link "Facebook" [ref=e457] [cursor=pointer]:
+            - /url: https://www.facebook.com/LaPinozPizzaIndia
+            - img [ref=e458]
+          - link "Instagram" [ref=e461] [cursor=pointer]:
+            - /url: https://www.instagram.com/lapinozpizzaindia/
+            - img [ref=e462]
+          - link "Youtube" [ref=e465] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/LaPinozPizzaIndia/
+            - img [ref=e466]
+    - list [ref=e471]:
+      - listitem [ref=e472]:
+        - link "Loyalty" [ref=e473] [cursor=pointer]:
+          - /url: https://lapinozpizza.in/loyalty
+    - generic [ref=e475]:
+      - paragraph [ref=e476]:
+        - link "Powered By Uengage Logo New" [ref=e477] [cursor=pointer]:
+          - /url: https://www.uengage.io/
+          - text: Powered By
+          - img "Uengage Logo New" [ref=e478]
+      - paragraph [ref=e479]:
+        - img "Copyright Icon" [ref=e480]
+        - text: Copyright. All Rights Reserved

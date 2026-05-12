@@ -1,0 +1,36 @@
+[     765ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://connect.facebook.net/en_US/fbevents.js:0
+[    1089ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://stats.g.doubleclick.net/g/collect?v=2&tid=G-3HZHM5GDEH&cid=957284536.1778565733&gtm=45je6581v9237509576za200zd9237509576&rcb=8&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=0~115938466~115938468~118463262~119013244:0
+[    1089ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://stats.g.doubleclick.net/g/collect?v=2&tid=G-DSZP4ZD20L&cid=957284536.1778565733&gtm=45je6581v9237509576za200zd9237509576&rcb=8&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=0~115938466~115938468~118463262~119013244:0
+[    1233ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:0
+[    1234ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:0
+[   11727ms] [WARNING] updateCurrentSelectionDisplayMenu() not run: #deliveryCardMenu .option not found after waiting. @ https://lapinozpizza.in/assets/themes/ue_silver/js/wla_20260509.js?v=20260210b:700
+[   21379ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://filtering.adblock360.com/ab/set-current-domain:0
+[   21380ms] [ERROR] Unhandled Promise rejection: TypeError: Failed to fetch
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:21:3585
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:21:3016
+    at Object.next (https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:21:3121)
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:21:3406
+    at new Promise (<anonymous>)
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:21:3151
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:21:3418
+    at func (https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:21:3813)
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:23:4505
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:23:4643 @ https://lapinozpizza.in/assets/themes/ue_silver/js/wla_20260509.js?v=20260210b:37
+[   21392ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://filtering.adblock360.com/bm/manager-domain-data?domain=lapinozpizza.in:0
+[   21393ms] [ERROR] Error sending request: TypeError: Failed to fetch
+    at c.sendRequest (https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:26:2258)
+    at c.sendGetRequest (https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:26:2158)
+    at c.getDomainData (https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:26:1177)
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:1426:9416
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:1426:9589
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:1426:9593
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:1428:3 @ https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:25
+[   21393ms] [ERROR] Manager initialization error: TypeError: Failed to fetch
+    at c.sendRequest (https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:26:2258)
+    at c.sendGetRequest (https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:26:2158)
+    at c.getDomainData (https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:26:1177)
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:1426:9416
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:1426:9589
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:1426:9593
+    at https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:1428:3 @ https://lapinozpizza.in/order/laponoz-ghatlodiya-ahmedabad/92376/1541579:1425
+[   21858ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://o4509864356347904.ingest.us.sentry.io/api/4509864420048896/envelope/?sentry_version=7&sentry_key=b5c0d2a9fa1e04f55cc46c3bc48bc74e&sentry_client=sentry.javascript.browser%2F9.47.1:0
