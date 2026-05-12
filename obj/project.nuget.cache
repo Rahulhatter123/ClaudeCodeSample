@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "qtXy12iea7I=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rahul\\Desktop\\API_Tasks\\VS_Code_Samples\\ClaudePointsAPI_2\\ClaudePointsAPI_2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rahul\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "C:\\Users\\rahul\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\rahul\\.nuget\\packages\\scalar.aspnetcore\\2.14.11\\scalar.aspnetcore.2.14.11.nupkg.sha512"
+  ],
+  "logs": []
+}

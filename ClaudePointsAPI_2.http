@@ -1,0 +1,6 @@
+@ClaudePointsAPI_2_HostAddress = http://localhost:5146
+
+GET {{ClaudePointsAPI_2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
