@@ -1,3 +1,5 @@
+# This GitHub Actions workflow runs the Claude Code review tool on pushes to the master branch and on pull request events.
+
 name: Claude Code Review on master pushes
 
 on:
