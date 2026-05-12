@@ -56,7 +56,7 @@ jobs:
       - name: Post review comment on commit
         if: always()
         env:
-          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
+          GH_TOKEN: ${{ secrets.GIT_TOKEN }}
         run: |
           if [ -s report.md ]; then
             gh api \
