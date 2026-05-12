@@ -29,13 +29,19 @@ jobs:
       - name: Run Claude Code review
         env:
           CLAUDE_PAT: ${{ secrets.CLAUDE_PAT }}
-        run: |
-          claude-code review \
-            --repo "${{ github.repository }}" \
-            --sha "${{ github.sha }}" \
-            --token "$CLAUDE_PAT" \
-            --min-score 80 \
-            --output report.md
+        # run: |
+        #   claude-code review \
+        #     --repo "${{ github.repository }}" \
+        #     --sha "${{ github.sha }}" \
+        #     --token "$CLAUDE_PAT" \
+        #     --min-score 80 \
+        #     --output report.md
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.CLAUDE_PAT }}
+          prompt: |
+            Review this PR for bugs, security issues, and code quality.
+            Post inline comments on specific lines where issues are found.
 
       - name: Post review comment on commit
         if: always()
