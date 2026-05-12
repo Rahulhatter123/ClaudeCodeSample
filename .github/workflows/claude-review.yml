@@ -29,6 +29,7 @@ jobs:
       - name: Run Claude Code review
         env:
           CLAUDE_PAT: ${{ secrets.CLAUDE_PAT }}
+          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
         # run: |
         #   claude-code review \
         #     --repo "${{ github.repository }}" \
@@ -39,14 +40,14 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_PAT }}
+          git_token: ${{ secrets.GIT_TOKEN }}
           prompt: |
-            Review this PR for bugs, security issues, and code quality.
-            Post inline comments on specific lines where issues are found.
+            Review the latest pushed changes for bugs, security issues, and code quality.
 
       - name: Post review comment on commit
         if: always()
         env:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
         run: |
           if [ -s report.md ]; then
             gh api \
