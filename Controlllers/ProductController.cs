@@ -9,6 +9,7 @@ public class ProductsController : ControllerBase
     [HttpGet("list")]
     public IActionResult GetProducts()
     {
+        var api_key = "12345";
         var products = new List<string>
         {
             "Product 1",
