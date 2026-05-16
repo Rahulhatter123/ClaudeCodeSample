@@ -28,6 +28,11 @@ jobs:
         run: snyk code test
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --sarif-file-output=snyk.sarif
+
+      - name: Print the snyk sarif file
+        run: cat snyk.sarif
           
   #review:
     #runs-on: ubuntu-latest
