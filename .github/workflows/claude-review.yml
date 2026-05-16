@@ -25,12 +25,10 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
       - name: Run Snyk Code Test
-        run: snyk code test
+        run: snyk code test --sarif-file-output=snyk.sarif
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        with:
-          args: --sarif-file-output=snyk.sarif
-
+        
       - name: Print the snyk sarif file
         run: cat snyk.sarif
           
