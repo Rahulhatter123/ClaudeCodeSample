@@ -39,11 +39,12 @@ jobs:
 
       - name: Pass or fail the job
         run: |
-            if ["$RESULTS_LENGTH" != 0]; then
-               echo "Job Failed"
-               exit 1
+            if [ "$RESULTS_LENGTH" -ne 0 ]; then
+             echo "Job Failed"
+             exit 1
             else
-               echo "Papu Pass Ho Gaya"
+             echo "Papu Pass Ho Gaya"
+            fi
                
       - name: Send notification on Slack using Webhooks
         uses: slackapi/slack-github-action@v1.24.0
