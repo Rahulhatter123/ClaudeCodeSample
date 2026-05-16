@@ -50,6 +50,8 @@ jobs:
         uses: slackapi/slack-github-action@v3
         if: always()
         with:
+          webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook-type: incoming-webhook
           payload: |
                 {
                   "text": "*The Snyk scan result for repo is: ${{job.status}}* \n *Number of vulnerability: ${{env.RESULTS_LENGTH}}* \n*Details*: https://github.com/${{github.repository}}/actions/runs/${{github.run_id}}"
