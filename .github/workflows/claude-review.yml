@@ -47,7 +47,7 @@ jobs:
             fi
                
       - name: Send notification on Slack using Webhooks
-        uses: slackapi/slack-github-action@v1.24.0
+        uses: slackapi/slack-github-action@v3
         if: always()
         with:
           payload: |
