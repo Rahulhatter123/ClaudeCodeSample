@@ -14,13 +14,20 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/dotnet@master
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0 # CRITICAL: Forces GitHub to download the actual code files for Snyk to see
+
+      - name: Setup Snyk CLI
+        uses: snyk/actions/setup@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        with:
-          command: code test
+
+      - name: Run Snyk Code Test
+        run: snyk code test
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
           
   #review:
     #runs-on: ubuntu-latest
