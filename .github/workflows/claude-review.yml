@@ -6,62 +6,66 @@ on:
   push:
     branches:
       - master
+      - dev
   pull_request:
     types: [opened, synchronize, reopened]
 
 jobs:
-  review:
+  security:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Install Claude Code CLI
-        run: |
-          npm install -g @anthropic-ai/claude-code
-
-      - name: Run Claude Code review
+      - uses: actions/checkout@master
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/dotnet@master
         env:
-          CLAUDE_PAT: ${{ secrets.CLAUDE_PAT }}
-          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
-        # run: |
-        #   claude-code review \
-        #     --repo "${{ github.repository }}" \
-        #     --sha "${{ github.sha }}" \
-        #     --token "$CLAUDE_PAT" \
-        #     --min-score 80 \
-        #     --output report.md
-        if: github.event_name == 'pull_request'
-        uses: anthropics/claude-code-action@v1
-        with:
-          anthropic_api_key: ${{ secrets.CLAUDE_PAT }}
-          github_token: ${{ secrets.GIT_TOKEN }}
-          prompt: |
-            Review the latest pushed changes for bugs, security issues, and code quality.
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          
+  #review:
+    #runs-on: ubuntu-latest
+    #permissions:
+      #contents: read
+      #pull-requests: write
 
-      - name: Run Claude Code (Master Audit)
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        run: |
+    #steps:
+      #- name: Checkout repository
+      #  uses: actions/checkout@v4
+      #  with:
+      #    fetch-depth: 0
+
+      #- name: Install Claude Code CLI
+      #  run: |
+      #    npm install -g @anthropic-ai/claude-code
+
+      #- name: Run Claude Code review
+      #  env:
+      #    CLAUDE_PAT: ${{ secrets.CLAUDE_PAT }}
+      #    GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
+        
+      #  if: github.event_name == 'pull_request'
+      #  uses: anthropics/claude-code-action@v1
+      #  with:
+      #    anthropic_api_key: ${{ secrets.CLAUDE_PAT }}
+      #    github_token: ${{ secrets.GIT_TOKEN }}
+      #    prompt: |
+      #      Review the latest pushed changes for bugs, security issues, and code quality.
+
+      #- name: Run Claude Code (Master Audit)
+      #  if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+      #  run: |
           # Use -p for non-interactive mode and pipe instructions
-          npx @anthropic-ai/claude-code -p "Scan the repository for bugs and security issues, then provide a summary." > report.md
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.CLAUDE_PAT }}
+      #    npx @anthropic-ai/claude-code -p "Scan the repository for bugs and security issues, then provide a summary." > report.md
+      #  env:
+      #    ANTHROPIC_API_KEY: ${{ secrets.CLAUDE_PAT }}
 
-      - name: Post review comment on commit
-        if: always()
-        env:
-          GH_TOKEN: ${{ secrets.GIT_TOKEN }}
-        run: |
-          if [ -s report.md ]; then
-            gh api \
-              -X POST \
-              -H "Accept: application/vnd.github+json" \
-              /repos/${{ github.repository }}/commits/${{ github.sha }}/comments \
-              -f body="$(cat report.md)"
-          fi
+      #- name: Post review comment on commit
+      #  if: always()
+      #  env:
+      #    GH_TOKEN: ${{ secrets.GIT_TOKEN }}
+      #  run: |
+      #    if [ -s report.md ]; then
+      #      gh api \
+      #        -X POST \
+      #        -H "Accept: application/vnd.github+json" \
+      #        /repos/${{ github.repository }}/commits/${{ github.sha }}/comments \
+      #        -f body="$(cat report.md)"
+      #    fi
