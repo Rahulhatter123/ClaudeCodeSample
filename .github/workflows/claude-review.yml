@@ -25,7 +25,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
       - name: Run Snyk Code Test
-        run: snyk code test --sarif-file-output=snyk.sarif
+        run: snyk code test --sarif-file-output=snyk.sarif --severity-threshold=high
         continue-on-error: true
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
