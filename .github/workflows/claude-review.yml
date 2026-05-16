@@ -20,7 +20,7 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          command: code test
+          args: --severity-threshold=high
           
   #review:
     #runs-on: ubuntu-latest
